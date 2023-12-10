@@ -1,7 +1,8 @@
 # Kubernetes Learning
 
 [**Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]**](https://www.youtube.com/watch?v=X48VuDVv0do&t=490s&ab_channel=TechWorldwithNana)\
-[**TechWorld with Nana - Basic Kubernetes Demo**](https://gitlab.com/nanuchi/youtube-tutorial-series/-/tree/master)
+[**TechWorld with Nana - Basic Kubernetes Demo**](https://gitlab.com/nanuchi/youtube-tutorial-series/-/tree/master)\
+[**The Childrens Illustrated Guide To Kubernetes**](https://www.cncf.io/phippy/the-childrens-illustrated-guide-to-kubernetes/)
 
 ## What is Kubernetes?
 
@@ -32,4 +33,5 @@ https://kubernetes.io/docs/concepts/overview/components/
 
 ## Kubernetes setup (For Linux Arch based user)
 
-https://wiki.archlinux.org/title/Kubernetes
+https://wiki.archlinux.org/title/Kubernetes\
+https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart
