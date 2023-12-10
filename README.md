@@ -29,3 +29,7 @@ The need for a container orchestration tool
 
 https://kubernetes.io/docs/concepts/overview/components/
 ![components](components.png)
+
+## Kubernetes setup (For Linux Arch based user)
+
+https://wiki.archlinux.org/title/Kubernetes
