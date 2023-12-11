@@ -35,3 +35,5 @@ https://kubernetes.io/docs/concepts/overview/components/
 
 https://wiki.archlinux.org/title/Kubernetes\
 https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart
+
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16 --cri-socket /run/containerd/containerd.sock
