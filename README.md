@@ -33,7 +33,11 @@ https://kubernetes.io/docs/concepts/overview/components/
 
 ## Kubernetes setup (For Linux Arch based user)
 
-https://wiki.archlinux.org/title/Kubernetes\
-https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart
+https://wiki.archlinux.org/title/Kubernetes \
+https://docs.tigera.io/calico/latest/getting-started/kubernetes/ \
+https://blooprynt.io/blog/2018/11/12/start-to-finish-net-containers-deployed-in-on-premise-load-balanced-kubernetes-with-istio-mesh
+https://kubernetes.github.io/ingress-nginx/deploy/baremetal/
 
 sudo kubeadm init --pod-network-cidr=192.168.0.0/16 --cri-socket /run/containerd/containerd.sock
+sudo kubeadm init --pod-network-cidr=172.16.0.0/12 --apiserver-advertise-address 0.0.0.0
+nmap -v -sn -n 192.168.10.0/24 -oG - | awk '/Status: Down/{print $2}'
