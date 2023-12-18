@@ -38,6 +38,23 @@ https://docs.tigera.io/calico/latest/getting-started/kubernetes/ \
 https://blooprynt.io/blog/2018/11/12/start-to-finish-net-containers-deployed-in-on-premise-load-balanced-kubernetes-with-istio-mesh
 https://kubernetes.github.io/ingress-nginx/deploy/baremetal/
 
-sudo kubeadm init --pod-network-cidr=192.168.0.0/16 --cri-socket /run/containerd/containerd.sock
-sudo kubeadm init --pod-network-cidr=172.16.0.0/12 --apiserver-advertise-address 0.0.0.0
-nmap -v -sn -n 192.168.10.0/24 -oG - | awk '/Status: Down/{print $2}'
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16 --cri-socket /run/containerd/containerd.sock \
+sudo kubeadm init --pod-network-cidr=172.16.0.0/12 --apiserver-advertise-address 0.0.0.0 \
+https://serverfault.com/questions/586714/nmap-find-free-ips-from-the-range \
+nmap -v -sn -n 192.168.10.0/24 -oG - | awk '/Status: Down/{print $2}' \
+kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+kubectl taint nodes --all node-role.kubernetes.io/master-
+https://docs.google.com/spreadsheets/d/191WWNpjJ2za6-nbG4ZoUMXMpUK8KlCIosvQB0f-oq3k/edit#gid=907731238
+
+https://github.com/derailed/k9s/issues/468 \
+alias k9prod="k9s --context mycluster -n my
+export EDITOR=nvim
+export GIT_EDITOR=nvim
+alias code=vscodium
+source <(kubectl completion zsh)
+https://gist.github.com/doevelopper/ff4a9a211e74f8a2d44eb4afb21f0a38 \
+https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/kubectl/kubectl.plugin.zsh \
+https://github.com/ohmyzsh/ohmyzsh/wiki \
+sh -c "$(curl -fsSL https://install.ohmyz.sh)"
+
+sh -c "$(wget -O- https://install.ohmyz.sh)"
