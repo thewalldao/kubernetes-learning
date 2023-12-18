@@ -14,8 +14,8 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: argocd.example.com
-      http:
+    # - host: argocd.example.com <-- use this if we have dns
+    - http:
         paths:
           - path: /
             pathType: Prefix
