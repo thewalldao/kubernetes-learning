@@ -1,0 +1,11 @@
+{
+    "hosts": [
+      "argocd.thewalldao.com",
+      "192.168.10.2"
+    ],
+    "CN": "argocd.thewalldao.com",
+    "key": {
+      "algo": "ecdsa",
+      "size": 256
+    }
+  }

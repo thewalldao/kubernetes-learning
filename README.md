@@ -61,6 +61,6 @@ sh -c "$(wget -O- https://install.ohmyz.sh)"
 KEY_FILE=argocd.thewalldao.com.key
 CERT_FILE=argocd.thewalldao.com.crt
 HOST=argocd.thewalldao.com
-
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ${KEY_FILE} -out ${CERT_FILE} -subj "/CN=${HOST}/O=${HOST}" -addext "subjectAltName = DNS:${HOST}”
 https://kubernetes.github.io/ingress-nginx/user-guide/tls/
+edit /etc/hosts

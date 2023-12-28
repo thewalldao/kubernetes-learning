@@ -1,0 +1,7 @@
+{
+    "CN": "argocd.thewalldao.com",
+    "key": {
+      "algo": "rsa",
+      "size": 2048
+    }
+  }

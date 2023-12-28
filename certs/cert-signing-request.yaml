@@ -1,0 +1,12 @@
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: argocd-server-ingress.argocd
+  namespace: argocd
+spec:
+  request: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURSBSRVFVRVNULS0tLS0KTUlJQkV6Q0J1d0lCQURBZ01SNHdIQVlEVlFRREV4VmhjbWR2WTJRdWRHaGxkMkZzYkdSaGJ5NWpiMjB3V1RBVApCZ2NxaGtqT1BRSUJCZ2dxaGtqT1BRTUJCd05DQUFRMjlGamNjbS9wb08zdU5VdG50ZS81OHNJVkpPUVVYWVloCm5jcDNUMVNiV01tc2ROV3JOcmRYYm5CbUVaUHA0cmVuQ1UzNThrUi93TGpjdHVIRVQwU1dvRGt3TndZSktvWkkKaHZjTkFRa09NU293S0RBbUJnTlZIUkVFSHpBZGdoVmhjbWR2WTJRdWRHaGxkMkZzYkdSaGJ5NWpiMjJIQk1DbwpDZ0l3Q2dZSUtvWkl6ajBFQXdJRFJ3QXdSQUlnTFNpY3kxVVdTQmVMVmJ3U2dLMHVwS01RZ1ViOVU2ZzdUU05RCnNZeHFOTThDSUNHbDZSNENCaUxZTUNpMHpDeUM0UTJaOFFSemNYbHVCd3hMaGNscUR1NmMKLS0tLS1FTkQgQ0VSVElGSUNBVEUgUkVRVUVTVC0tLS0tCg==
+  signerName: argocd.thewalldao.com/serving
+  usages:
+    - digital signature
+    - key encipherment
+    - server auth

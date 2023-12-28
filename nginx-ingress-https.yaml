@@ -27,5 +27,4 @@ spec:
   tls:
     - hosts:
         - argocd.thewalldao.com
-      secretName: argocd-server-tls # as expected by argocd-server
-
+      secretName: argocd-tls-secret # as expected by argocd-server
