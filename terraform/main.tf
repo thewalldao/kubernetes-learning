@@ -64,7 +64,7 @@ resource "libvirt_volume" "test_manjaro" {
 # Create the machine
 resource "libvirt_domain" "domain-manjaro" {
   count   = length(var.vm_machines)
-  name    = "manjaro-terraform-${count.index}"
+  name    = var.vm_machines[count.index]
   memory  = "2048"
   vcpu    = 2
   running = true
@@ -72,7 +72,7 @@ resource "libvirt_domain" "domain-manjaro" {
 
   network_interface {
     network_name   = "default"
-    hostname       = "${var.vm_machines[count.index]}."
+    hostname       = var.vm_machines[count.index]
     wait_for_lease = true
   }
 
