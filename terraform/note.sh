@@ -1,5 +1,8 @@
 sudo virsh net-start default
+sudo virsh net-autostart default
 sudo virsh list --all
+sudo virsh net-list --all
+sudo virsh net-dhcp-leases default 
 sudo virsh undefine manjaro-terraform
 sudo systemctl enable --now virtlogd
 sudo systemctl enable --now libvirtd.service
